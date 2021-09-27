@@ -16,6 +16,9 @@
         },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps"
+        },
+        "group_id": {
+            "description": "your group id where you want to forward all messages"
         }
     },
     "buildpacks": [
