@@ -19,9 +19,9 @@ async def edited(bot,message):
 	await bot.send_message(text=f"{message.from_user.mention} Edited This [Message]({message.link})",chat_id=chatid)
 
 @edit_bot.on_message(filters.group)
-async def forward_message(_, m: Message):
+def forward_message(_, m: Message):
     group_id = int(os.environ["group_id"])
-    await f = m.forward(group_id)
+    f = m.forward(group_id)
     #link = f.link
     #print("\nmessage:",m.text,"\nmessage link:",link,"\nby:", m.from_user.first_name)
 
